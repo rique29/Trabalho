@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Projeto_FNJ</title>
+</head>
+<body>
+    <header class="bg-blue-500 text-white p-6">
+      <div class="container mx-auto flex justify-between items-center">
+        <a class="flex text-left flex-col">
+          <img src="img/FJN.png" alt="Logo" class="h-auto w-1/4">
+          <p>Faculdade de Juazeiro do Norte</p>
+        </a>
+        <nav class="space-x-4">
+          <a href="#" class="hover:text-gray-300">Home</a>
+          <a href="#" class="hover:text-gray-300">Graduações</a>
+          <a href="#" class="hover:text-gray-300">Pós-Graduação</a>
+          <a href="#" class="hover:text-gray-300">Institucional</a>
+          <a href="#" class="hover:text-gray-300">Fale Conosco</a>
+          <a href="#" class="hover:text-gray-300 bg-blue-900 px-2 py-1 rounded-lg">Biblioteca Virtual</a>
+          <a href="#" class="hover:text-gray-300 bg-blue-900 px-2 py-1 rounded-lg">Confira suas Notas</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="text-left bg-blue-950 py-4 px-6">
+      Você está em: 
+      <b class="mr-5 hover:text-gray-900">Página Inicial</b>
+    </nav>
+    
+    <section class="container mx-auto flex flex-col items-center justify-center space-y-4">
+      <img class="w-1/2 h-auto" src="img/OIP.jpg" alt="Placeholder Image">
+      <p class="text-center text-xl"></p>
+    </section>
+
+<!--Cursos-->
+<div class="container mx-auto flex flex-col md:flex-row justify-center items-center p-4">
+  <section class="course-list w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
+    <h2 class="text-xl font-bold mb-4 text-center bg-blue-950">Escolha um Curso</h2>
+    <table class="table table-fixed w-full border border-gray-300 divide-y divide-gray-300 shadow-md">
+      <thead>
+        <tr>
+          <th class="text-left px-4 py-3 bg-indigo-500 text-white font-bold">Cursos Disponíveis</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaCursos">
+        </tbody>
+    </table>
+  </section>
+  <section class="course-details w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2 mt-4 bg-white rounded-md shadow-md">
+    <table class="table table-fixed w-full border border-gray-300 divide-y divide-gray-300 shadow-md">
+      <tbody id="detalhesCurso">
+        <tr>
+          <td colspan="2" class="px-4 py-3">
+            <strong id="nomeCursoSelecionado"></strong>
+            <p id="descricaoCursoSelecionado"></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+
+<!--Utilidade e serviços-->
+<div class="container mx-auto">
+  <h2 class=" text-blue-500 text-3xl font-bold mb-6 border-b-4 border-blue-400 w-1/2">Utilidade e Serviços</h2>
+  <div class="grid grid-cols-3 grid-flow-row3 gap-5 justify-items-center">
+
+    <nav class="flex">
+      <div class="flex items-center flex-col">
+        <p class="mb-2">Tururururururu</p>
+        <img class="w-1/4" src="img/SUS.jpg">
+        <p class="mt-2">Among us</p>
+      </div>
+      <div class="flex items-center flex-col">
+        <p class="mb-2">Tururururururu</p>
+        <img class="w-1/4" src="img/SUS.jpg">
+        <p class="mt-2">Among us</p>
+      </div>
+      <div class="flex items-center flex-col">
+        <p class="mb-2">Tururururururu</p>
+        <img class="w-1/4" src="img/SUS.jpg">
+        <p class="mt-2">Among us</p>
+      </div>
+      <div class="flex items-center flex-col">
+        <p class="mb-2">Tururururururu</p>
+        <img class="w-1/4" src="img/SUS.jpg">
+        <p class="mt-2">Among us</p>
+      </div>
+      <div class="flex items-center flex-col">
+        <p class="mb-2">Tururururururu</p>
+        <img class="w-1/4" src="img/SUS.jpg">
+        <p class="mt-2">Among us</p>
+      </div>
+      </nav>
+  </div>
+</div> 
+
+<!--Rodape-1-->
+  <footer class="bg-blue-800 text-white py-10 ">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-row grid-cols-2 gap-20">
+              <div>
+                  <h2 class="text-xl font-bold mb-4">Graduações</h2>
+                  <p>Sistemas de informação</p>
+                  <p>Enfermagem</p>
+                  <p>Ciências Contábeis</p>
+                  <p>Nutrição</p>
+                  <p>Farmácia</p>
+              </div>
+
+              <div>
+                  <h2 class="text-xl font-bold mb-4">Manuais</h2>
+                  <p>Manual TOTVS</p>
+                  <p>Manual do TCC</p>
+                  <p>Manual do Aluno</p>
+              </div>
+
+              <div>
+                  <h2 class="text-xl font-bold mb-4">Site e Blogs</h2>
+                  <ul class="list-disc pl-5">
+                      <li><a href="#" class="text-gray-300 hover:text-white">Link para o Site</a></li>
+                      <li><a href="#" class="text-gray-300 hover:text-white">Link para o Blog</a></li>
+                  </ul>
+              </div>
+
+              <div>
+                  <h2 class="text-xl font-bold mb-4">Contato</h2>
+                  <p>Email: contato@example.com</p>
+                  <p>Telefone: (XX) XXXXX-XXXX</p>
+              </div>
+          </div>
+          <br>
+      </div>
+  </footer>
+
+<!-- Notícias -->
+<div class="flex flex-col items-center">
+  <h2 class="bg-blue-300 text-blue-500 text-3xl font-bold mb-6 border-b-4 w-1/2 mx-auto">Últimas Notícias</h2>
+
+  <div class="flex flex-wrap justify-center">
+    <!-- Texto 1 -->
+    <article class="w-full sm:w-1/2 lg:w-1/2 p-4">
+      <a href="#" class="flex items-center mb-2"></a>
+      <div class="mx-auto"> <!-- Contêiner para centralização -->
+        <img src="img/miojo.jpg" alt="miojo" class="w-16 h-16 rounded-full">
+      </div>
+      <h3 class="font-medium">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </h3>
+    </article>
+    <!-- Texto 2 -->
+    <article class="w-full sm:w-1/2 lg:w-1/2 p-4">
+      <a href="#" class="flex items-center mb-2"></a>
+      <div class="mx-auto"> <!-- Contêiner para centralização -->
+        <img src="img/meme.jpg" alt="meme" class="w-16 h-16 rounded-full">
+      </div>
+      <h3 class="font-medium">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </h3>
+    </article>
+  </div>
+
+  <div class="flex flex-wrap justify-center mt-8">
+    <!-- Texto 3 -->
+    <article class="w-full sm:w-1/2 lg:w-1/2 p-4">
+      <a href="#" class="flex items-center mb-2"></a>
+      <div class="mx-auto"> <!-- Contêiner para centralização -->
+        <img src="img/professor.jpg" alt="meme " class="w-16 h-16 rounded-full">
+      </div>
+      <h3 class="font-medium">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </h3>
+    </article>
+    <!-- Texto 4 -->
+    <article class="w-full sm:w-1/2 lg:w-1/2 p-4">
+      <a href="#" class="flex items-center mb-2"></a>
+      <div class="mx-auto"> <!-- Contêiner para centralização -->
+        <img src="img/miojo.jpg" alt="miojo" class="w-16 h-16 rounded-full">
+      </div>
+      <h3 class="font-medium">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </h3>
+    </article>
+  </div>
+</div>
+
+<div class="flex items-center">
+  <h1 class="mr-5 text-blue-600">
+    GALERIA DE FOTOS
+  </h1>
+  <h2 class="bg-blue-500 text-right">
+    Mostrar fotos de: Enfermagem
+  </h2>
+</div>
+<nav class="flex">
+<div class="flex items-center flex-col">
+  <p class="mb-2">Tururururururu</p>
+  <img class="w-1/4" src="img/SUS.jpg">
+  <p class="mt-2">Among us</p>
+</div>
+<div class="flex items-center flex-col">
+  <p class="mb-2">Tururururururu</p>
+  <img class="w-1/4" src="img/SUS.jpg">
+  <p class="mt-2">Among us</p>
+</div>
+<div class="flex items-center flex-col">
+  <p class="mb-2">Tururururururu</p>
+  <img class="w-1/4" src="img/SUS.jpg">
+  <p class="mt-2">Among us</p>
+</div>
+<div class="flex items-center flex-col">
+  <p class="mb-2">Tururururururu</p>
+  <img class="w-1/4" src="img/SUS.jpg">
+  <p class="mt-2">Among us</p>
+</div>
+<div class="flex items-center flex-col">
+  <p class="mb-2">Tururururururu</p>
+  <img class="w-1/4" src="img/SUS.jpg">
+  <p class="mt-2">Among us</p>
+</div>
+</nav>
+
+<div class="bg-blue-950 align-middle flex items-center flex-wrap justify-center">
+  <h1 class="mx-4 my-2 text-white line-h-[28px] mb-6">
+    <b class="text-black">Graduações</b><br>Lula livre<br>Lula solta<br>Ninguem gosta do lula
+  </h1>
+  <h1 class="mx-4 my-2 text-white line-h-[28px] mb-6">
+    <b class="text-black">Manuais</b><br>Como soltar o lula<br>Como prender o lula<br>Como se livrar do lula
+  </h1>
+  <h1 class="mx-4 my-2 text-white line-h-[28px] mb-6">
+    <b class="text-black">Sites e Blogs</b><br>Como matar o bolsonaro<br>Como proteger o bolsonaro<br>Como tirar a vida do bolsonaro
+  </h1>
+</div>
+
+</div>
+    <footer class="bg-black text-white left text-3xl font-bold mb-6 border-b-4">
+      &comp; Empresa Aleátoria <br>
+      Todos os direitos Reservados.
+      Progamadores: Paulo Henrique e João Victor Miranda.
+    </footer>
+</body>
+</html>
+
